@@ -6,3 +6,6 @@ class Evento(models.Model):
    descricao = models.CharField(max_length=255)
    inicio = models.DateTimeField()
    final = models.DateTimeField()
+
+   def __unicode__(self):
+       return self.nome
